@@ -2,10 +2,10 @@
 Contains reusable typography components that are responsive and flexible. 
 
 
-
 ## Tailwind.config.js
 Add this to your tailwind configuration file.
 
+```
   module.exports = {
    ...,
    theme: {
@@ -51,3 +51,38 @@ Add this to your tailwind configuration file.
     },
    ...
   }
+```
+
+## Usage
+Every components has props that can modify some its predefined styling.
+
+| Props             | Description |
+| ----------------- | ----------- |
+| ```children```    | Expects text content or other nested tags |
+| ```fontStyle```   | Overrides the default the set sans-serif and serif style |
+| ```fontWeight```  | Overrides the default font weight of bold, semibold, medium, or regular |
+| ```colors```      | Expects text color and background color of the text. This props can also hold you custom dark mode class |
+| ```otherStyles``` | Appended at the end of the class prop where you can add additional class stylings |
+| ```...rest```     | The ```...rest``` props are spread out on the parent tag (e.g., h1, h2, h3, p, and caption). This prop may contain props such as an ```onClick``` event. |
+
+## Components
+
+1. Super Headline 
+2. Headline
+3. Subhead
+4. Mini Head
+5. Body Large
+6. Body
+7. Technical
+
+### Long Format
+1. LF Head
+2. LF Subhead
+3. LF Mini Head
+4. LF Body
+
+### Other Typographies
+1. Caption
+2. Pullquote
+3. Blockquote
+

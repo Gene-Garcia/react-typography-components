@@ -65,6 +65,36 @@ Every components has props that can modify some its predefined styling.
 | ```otherStyles``` | Appended at the end of the class prop where you can add additional class stylings |
 | ```...rest```     | The ```...rest``` props are spread out on the parent tag (e.g., h1, h2, h3, p, and caption). This prop may contain props such as an ```onClick``` event. |
 
+### Example
+
+```
+import React from 'react';
+
+const App = () => {
+  return (
+    <div>
+      <header>
+        <nav>...</nav>
+        ...
+      </header>
+      
+      <section>
+        <Headline onClick={() => alert("Welcome back, User!")}>Welcome Back!</Headline>
+        <Subhead>User account</Subhead>
+        
+        <Body>
+          ...
+        </Body>
+      <section>
+      
+      <footer>
+        ...
+      </footer>
+    </div>
+  )
+}
+```
+
 ## Components
 
 1. Super Headline 

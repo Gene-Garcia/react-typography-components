@@ -384,7 +384,6 @@ const Blockquoute = ({
 };
 
 export {
-  Header,
   SuperHeadline,
   Headline,
   Subhead,
